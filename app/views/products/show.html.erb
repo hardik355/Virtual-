@@ -1,0 +1,18 @@
+<h1> Show List </h1><br><br>
+
+<p>
+<strong>Category Name : </strong>
+<%= @product.name %>
+</p>
+
+<p>
+<strong>Category Name : </strong>
+<%= @product.price_in_dollars %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @product.category.name %>
+</p>
+
+<%= link_to 'Back', products_path %>
