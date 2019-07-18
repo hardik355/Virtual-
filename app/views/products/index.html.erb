@@ -1,6 +1,17 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Products</h1>
+<%= search_form_for @search do |form|%>
+  <%= form.label :name_cont, "Name Contains"%>
+  <%= form.text_field :name_cont %>
+
+  <%= form.label :price_in_cent_gteq, "Name Contains"%>
+  <%= form.text_field :price_in_cent_gteq %>
+
+  <%= form.label :price_in_cent_lteq, "Name Contains"%>
+  <%= form.text_field :price_in_cent_lteq %>
+
+  <%= form.submit "Search"%>
+<% end %>
 
 <table>
   <thead>
